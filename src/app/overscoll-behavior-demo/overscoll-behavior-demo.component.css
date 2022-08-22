@@ -1,0 +1,64 @@
+.scrolling-container {
+    border: 4px solid gray;
+    margin: 30px;
+    /* overscroll-behavior: none; */
+    height: 100%;
+    font-family: 'Open Sans Regular';
+    font-size: 18;
+}
+
+.even-row {
+    background-color: lightgrey;
+    border-width:  2px solid black;
+    height: 40px;
+    padding: 10px;
+}
+
+.odd-row {
+    background-color: white;
+    border-width:  2px solid black;
+    height: 40px;
+    padding: 10px;
+}
+
+header {
+    background-color: black;
+    color:white;
+    padding: 20px;
+}
+
+.inner-scrolling-1 {
+    border: 2px solid red;
+    margin: 30px;
+    overflow-y: auto;
+    height: 400px;
+    width: 350px;
+    position: fixed;
+    bottom: 300px;
+    left: 400px;
+    /* overscroll-behavior-y: none; */
+}
+
+.scrolling-area1 {
+  height: 320px;
+  overflow: auto;
+}
+
+.inner-scrolling-2 {
+    border: 2px solid gray;
+    margin: 30px;
+    overflow-y: auto;
+    height: 400px;
+    width: 350px;
+    position: fixed;
+    bottom: 300px;
+    right: 400px;
+}
+
+.scrolling-area2 {
+    height: 320px;
+    overflow: auto;
+    /* use overscroll-behavior-y to stop page scrolling behind the chatbox,
+    when the chatbox's scroll limits are reached */
+    overscroll-behavior-y: contain;
+  }

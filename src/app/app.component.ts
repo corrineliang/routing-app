@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing-app';
+
+
+  items = Array.from({length: 50}).map((_, i) => {
+    return {name: `item #${i}`, description: `itme description #${i}`};
+  });
+
+  innerItems = Array.from({length: 20}).map((_, i) => {
+    return {name: `inner-item #${i}`, description: `itme description #${i}`};
+  });
 }

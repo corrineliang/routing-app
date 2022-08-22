@@ -1,0 +1,29 @@
+<!-- <p>overscoll-behavior-demo works!</p> -->
+
+<div class="scrolling-container">
+    <div class="schedule-content-wrapper" *ngFor="let item of items ; let $index = index;">
+        <div class="name" [ngClass]="{'even-row': ($index%2 === 0) ,'odd-row': ($index%2 !== 0)}">{{item.name}}</div>
+    </div>
+
+    <section class="inner-scrolling-1">
+        <header>
+            <h1>no overscroll-behavior</h1>
+        </header>
+        <div class="scrolling-area1">
+            <div class="inner-wrapper" *ngFor="let item of innerItems ; let $index = index;">
+                <div class="name" [ngClass]="{'even-row': ($index%2 === 0) ,'odd-row': ($index%2 !== 0)}">{{item.name}}</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inner-scrolling-2">
+        <header>
+            <h1>overscroll-behavior-y: contain</h1>
+        </header>
+        <div class="scrolling-area2">
+            <div class="inner-wrapper" *ngFor="let item of innerItems ; let $index = index;">
+                <div class="name" [ngClass]="{'even-row': ($index%2 === 0) ,'odd-row': ($index%2 !== 0)}">{{item.name}}</div>
+            </div>
+        </div>
+    </section>
+</div>
