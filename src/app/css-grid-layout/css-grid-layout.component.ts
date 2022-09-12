@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-overscoll-behavior-demo',
-  templateUrl: './overscoll-behavior-demo.component.html',
-  styleUrls: ['./overscoll-behavior-demo.component.css']
+  selector: 'app-css-grid-layout',
+  templateUrl: './css-grid-layout.component.html',
+  styleUrls: ['./css-grid-layout.component.scss']
 })
-export class OverscollBehaviorDemoComponent implements OnInit {
+export class CssGridLayoutComponent implements OnInit {
   items:any;
   innerItems:any;
 
   constructor() { }
 
   ngOnInit(): void {
+
     this.items = Array.from({length: 30}).map((_, i) => {
       return {name: `item #${i}`, description: `itme description #${i}`};
     });

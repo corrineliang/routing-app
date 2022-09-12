@@ -1,7 +1,6 @@
 .scrolling-container {
     border: 4px solid gray;
     margin: 30px;
-    /* overscroll-behavior: none; */
     height: 100%;
     font-family: 'Open Sans Regular';
     font-size: 18;
@@ -36,7 +35,7 @@ header {
     position: fixed;
     bottom: 300px;
     left: 400px;
-    /* overscroll-behavior-y: none; */
+    /* overscroll-behavior-y: auto; */
 }
 
 .scrolling-area1 {
@@ -58,7 +57,7 @@ header {
 .scrolling-area2 {
     height: 320px;
     overflow: auto;
-    /* use overscroll-behavior-y to stop page scrolling behind the chatbox,
+    /* use overscroll-behavior-y to stop page scrolling behind the dialog,
     when the chatbox's scroll limits are reached */
     overscroll-behavior-y: contain;
   }

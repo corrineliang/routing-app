@@ -1,0 +1,27 @@
+/* (A) TABLE WRAPPER */
+.demoDW {
+  width: 1000px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+/* (B) STICKY HEADERS */
+.demoDT th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.demoDT th[scope=row] {
+  left: 0;
+  z-index: 1;
+}
+
+/* (C) COSMETICS - NOT IMPORTANT */
+.demoDT th, #demoDT td {
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+  min-width: 300px;
+}
+.demoDT th { background: #ffebec; }
+.demoDT td { background: #e4ebff; }

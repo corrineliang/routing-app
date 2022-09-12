@@ -1,0 +1,38 @@
+<!-- <div class="wrapper">
+    <div class="one">One</div>
+    <div class="two">Two</div>
+    <div class="three">Three</div>
+    <div class="four">Four</div>
+    <div class="five">Five</div>
+    <div class="six">Six</div>
+  </div> -->
+
+
+<div class="wrapper2">
+    <div class="seven">seven</div>
+    <div class="eight">eight</div>
+    <div class="nine">nine</div>
+    <div class="ten">
+        <!-- <div class="wrapper3"> -->
+        <table>
+          <ng-container *ngFor="let item of innerItems ; let $index = index;">
+            <tr>
+              <td class="col-agent-names">
+                <div class="agent-names">
+                  <div class="name">{{item.name}}</div>
+                </div>
+              </td>
+              <td class="col-schdudule-data">
+                <div class="agent-schedule-data">
+                  <div class="schedule-data">{{item.description}}</div>
+                </div>
+              </td>
+            </tr>
+          </ng-container>
+
+        </table>
+
+        <!-- </div> -->
+    </div>
+  </div>
+

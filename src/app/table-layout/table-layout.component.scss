@@ -1,0 +1,81 @@
+
+.schedule-day-wrapper {
+    --schedule-data-border: 1px solid #eeeeee;
+    background-color: #fff;
+
+    .schedule-day-main {
+        height: 550px;
+        display: flex;
+
+        .schedule-employees-column {
+            height: 100%;
+            flex-direction: column;
+
+            .employees-search-bar {
+                flex-direction: column;
+                border-bottom: var(--schedule-data-border);
+                border-right: var(--schedule-data-border);
+                //width: 300px;
+                height: 120px;
+                background-color: pink;
+
+                table {
+                    tr.timeZone-dropdown {
+                        td {
+                            width: 300px;
+                            height: 40px;
+                            .cxone-singleselect-dropdown .dropdown-button {
+                                height: 40px;
+                                border-top: none;
+                                border-bottom: 1px solid rgb(208,210,211);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .employees-names {
+                float: left;
+                flex-direction: column;
+                width: 300px;
+                border-bottom: var(--schedule-data-border);
+                border-right: var(--schedule-data-border);
+                min-height: 300px; //need to calculate dynamically
+            }
+        }
+
+        .schedule-data-column {
+            height: 100%;
+            flex-direction: column;
+            overflow-x: auto;
+            scroll-behavior: contain;
+
+            .schedule-grid-header {
+                width: 100%;
+                max-width: fit-content;
+                flex-direction: column;
+                background-color: white;
+                height: 120px;
+                border-bottom: var(--schedule-data-border);
+                background-color: yellow
+            }
+
+            .schedule-grid-data {
+                width: 100%;
+                flex-direction: column;
+                border-bottom: var(--schedule-data-border);
+                min-height: 300px; //need to calculate dynamically
+            }
+        }
+    }
+
+    .schedule-day-keys {
+        float: right;
+        display: flex;
+        padding-bottom: 10px;
+
+        .day-key {
+            padding-right: 16px;
+        }
+    }
+}
